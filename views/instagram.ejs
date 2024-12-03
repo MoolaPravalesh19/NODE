@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram page</title>
+</head>
+<body>
+    <h1>This account belongs to @<%= username %></h1>
+    <button>follow</button>
+    <button>message</button>
+    <h1>The people who follow your account:</h1>
+    <% for(let name of followers){ %>
+        <li><%= name %></li>
+    <% } %>
+</body>
+</html>
